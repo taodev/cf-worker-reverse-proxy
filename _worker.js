@@ -4,7 +4,7 @@
 
 
 
-async fetch(request) {
+async fetch(request, env) {
   const url = new URL(request.url);
 
   // 新增：检查用户是否直接访问代理地址
